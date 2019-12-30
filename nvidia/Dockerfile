@@ -19,8 +19,8 @@ ADD ./requirements.txt /tmp
 RUN pip install pip setuptools -U && pip install -r /tmp/requirements.txt
 
 # install pytorch
-RUN pip install https://download.pytorch.org/whl/cu100/torch-1.0.0-cp36-cp36m-linux_x86_64.whl \
-    torchvision
+# RUN pip install https://download.pytorch.org/whl/cu100/torch-1.0.0-cp36-cp36m-linux_x86_64.whl \
+#     torchvision
 
 # set working directory
 WORKDIR /root/user

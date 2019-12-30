@@ -7,8 +7,9 @@ docker
 ```
 docker build ./ -t {image name}
 
-docker run --runtime=nvidia -p 8888:8888 -d -v ~/project:/root/user/project --name test instance_name /sbin/init
+docker run --runtime=nvidia -p 8888:8888 -d -v ~/project:/root/user/project --name test tag /sbin/init
 
+docker run -p 8888:8888 -d -v ~/project:/root/user/project --name test tag /sbin/init
 ```
 
 コンテナ内の作業
